@@ -23,6 +23,7 @@ Original: [@LeonardoConstantino](https://github.com/LeonardoConstantino)
 
 ### **Notas Adicionais:**
 Leia o modo de uso atenciosamente no comando `{prefix}21 --help`.
+Mais informações dentro do zip em EXTRAS.md
 
 ### **Contato:**
 Para suporte ou sugestões, entre em contato através dos [seguintes meios](https://github.com/LeonardoConstantino#-como-me-encontrar).
