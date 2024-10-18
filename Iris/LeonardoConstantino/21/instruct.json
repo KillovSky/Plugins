@@ -3,6 +3,10 @@
     "value": ".",
     "description": "Caminho relativo onde a pasta do sistema será inserida."
   },
+  "installed": {
+    "value": "./lib/Commands/21",
+    "description": "Caminho absoluto ou relativo onde a pasta do comando estará após instalar. Ex: './lib/Commands/21'."
+  },
   "alias": {
     "value": ["21", "vinteum", "21game"],
     "description": "Nomes alternativos para referenciar este comando na lista de comandos disponíveis. Separe múltiplos aliases com vírgulas."

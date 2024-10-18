@@ -33,7 +33,10 @@ Se você deseja adicionar seus próprios plugins ou melhorias, siga estas etapas
 
 3. **Crie um README.md**: Use o [EXEMPLO](https://github.com/KillovSky/Plugins/issues/3#issuecomment-2408746037) para criar o melhor arquivo possivel.
 
-4. **Abra um Pull Request**: Após fazer o upload, proponha suas alterações e descreva suas contribuições. Isso nos permitirá revisar e incorporar seu plugin ao repositório.
+4. **Crie um instruct.json**: Use o [EXEMPLO](https://github.com/KillovSky/Plugins/issues/3#issuecomment-2423125689) para criar o melhor arquivo possivel, faça com cuidado.
+    - Usuários **DEVEM** ler esse arquivo ou jogar ele em uma IA para assegurar a sua segurança, @KillovSky só aprovará P.R's que sejam seguras, mas não custa nada verificar duas vezes.
+
+5. **Abra um Pull Request**: Após fazer o upload, proponha suas alterações e descreva suas contribuições. Isso nos permitirá revisar e incorporar seu plugin ao repositório.
 
 ## Como Usar os Plugins
 
