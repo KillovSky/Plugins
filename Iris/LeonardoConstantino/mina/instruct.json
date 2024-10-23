@@ -1,0 +1,75 @@
+{
+    "location": {
+      "value": ".",
+      "description": "Caminho relativo onde a pasta do sistema será inserida."
+    },
+    "installed": {
+      "value": "./lib/Commands/mina",
+      "description": "Caminho absoluto ou relativo onde a pasta do comando estará após instalar. Ex: './lib/Commands/mina'."
+    },
+    "alias": {
+      "value": ["mina", "minesweeper", "minagame"],
+      "description": "Nomes alternativos para referenciar este comando na lista de comandos disponíveis. Separe múltiplos aliases com vírgulas."
+    },
+    "install": {
+      "description": "Comandos necessários para instalar dependências ou programas requisitados. Utilize &, |, && ou || para múltiplos comandos, conforme o sistema operacional.",
+      "value": {
+        "help": "Ex Command: 'choco install pacote', 'npm install pacote', etc; Runtime é o programa que executará o 'command', como 'apt', 'choco' ou 'npm'.",
+        "windows": {
+          "runtime": "none",
+          "command": "none"
+        },
+        "linux": {
+          "runtime": "none",
+          "command": "none"
+        },
+        "macos": {
+          "runtime": "none",
+          "command": "none"
+        },
+        "other": {
+          "runtime": "none",
+          "command": "none"
+        }
+      }
+    },
+    "configuration": {
+      "description": "Comandos a serem executados após a instalação, usados para configurar o ambiente ou software. Utilize &, |, && ou || para múltiplos comandos.",
+      "value": {
+        "help": "Ex: 'sed -i \"s/#PLACEHOLDER_USERNAME/$(whoami)/g\" settings.json' para substituir um placeholder no arquivo de configuração. 'runtime' é o programa que executará o 'command'.",
+        "windows": {
+          "runtime": "none",
+          "command": "none"
+        },
+        "linux": {
+          "runtime": "none",
+          "command": "none"
+        },
+        "macos": {
+          "runtime": "none",
+          "command": "none"
+        },
+        "other": {
+          "runtime": "none",
+          "command": "none"
+        }
+      }
+    },
+    "dependencies": {
+      "description": "Lista de bibliotecas ou pacotes necessários para o funcionamento do comando, se houver.",
+      "help": "Formato: 'NOME_BIBLIOTECA: URL_DO_DOWNLOAD'. Ex: { 'Ruby': 'https://rubyinstaller.org/download' }",
+      "value": {}
+    },
+    "status": {
+      "value": "active",
+      "description": "Indica se o projeto está ativo, em desenvolvimento, ou se foi descontinuado; none, active, outdated."
+    },
+    "platform": {
+      "value": "Any",
+      "description": "Sistemas operacionais compatíveis com o código, informando onde o comando pode ser executado; Ex: Any, Windows, MacOS, Linux, Termux, Solaris..."
+    },
+    "notes": {
+      "value": "Leia o modo de uso atenciosamente no comando '{prefix}mina --help'. Mais informações dentro do zip em EXTRAS.md.",
+      "description": "Detalhes adicionais que devem ser citados, como guias, vídeos ou outras informações relevantes."
+    }
+  }
