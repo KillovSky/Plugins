@@ -1,75 +1,75 @@
 {
-    "location": {
-      "value": ".",
-      "description": "Caminho relativo onde a pasta do sistema será inserida."
-    },
-    "installed": {
-      "value": "./lib/Commands/mina",
-      "description": "Caminho absoluto ou relativo onde a pasta do comando estará após instalar. Ex: './lib/Commands/mina'."
-    },
-    "alias": {
-      "value": ["mina", "minesweeper", "minagame"],
-      "description": "Nomes alternativos para referenciar este comando na lista de comandos disponíveis. Separe múltiplos aliases com vírgulas."
-    },
-    "install": {
-      "description": "Comandos necessários para instalar dependências ou programas requisitados. Utilize &, |, && ou || para múltiplos comandos, conforme o sistema operacional.",
-      "value": {
-        "help": "Ex Command: 'choco install pacote', 'npm install pacote', etc; Runtime é o programa que executará o 'command', como 'apt', 'choco' ou 'npm'.",
-        "windows": {
-          "runtime": "none",
-          "command": "none"
-        },
-        "linux": {
-          "runtime": "none",
-          "command": "none"
-        },
-        "macos": {
-          "runtime": "none",
-          "command": "none"
-        },
-        "other": {
-          "runtime": "none",
-          "command": "none"
-        }
+  "location": {
+    "value": ".",
+    "description": "Caminho relativo onde a pasta do sistema será inserida."
+  },
+  "installed": {
+    "value": "./lib/Commands/mina",
+    "description": "Caminho absoluto ou relativo onde a pasta do comando estará após instalar. Ex: './lib/Commands/mina'."
+  },
+  "alias": {
+    "value": ["mina", "minesweeper", "minegame"],
+    "description": "Nomes alternativos para referenciar este comando na lista de comandos disponíveis. Separe múltiplos aliases com vírgulas."
+  },
+  "install": {
+    "description": "Comandos necessários para instalar dependências ou programas requisitados. Utilize &, |, && ou || para múltiplos comandos, conforme o sistema operacional.",
+    "value": {
+      "help": "Ex Command: 'choco install pacote', 'npm install pacote', etc; Runtime é o programa que executará o 'command', como 'apt', 'choco' ou 'npm'.",
+      "windows": {
+        "runtime": "none",
+        "command": "none"
+      },
+      "linux": {
+        "runtime": "apt",
+        "command": "apt install fonts-noto fonts-dejavu"
+      },
+      "macos": {
+        "runtime": "none",
+        "command": "none"
+      },
+      "other": {
+        "runtime": "none",
+        "command": "none"
       }
-    },
-    "configuration": {
-      "description": "Comandos a serem executados após a instalação, usados para configurar o ambiente ou software. Utilize &, |, && ou || para múltiplos comandos.",
-      "value": {
-        "help": "Ex: 'sed -i \"s/#PLACEHOLDER_USERNAME/$(whoami)/g\" settings.json' para substituir um placeholder no arquivo de configuração. 'runtime' é o programa que executará o 'command'.",
-        "windows": {
-          "runtime": "none",
-          "command": "none"
-        },
-        "linux": {
-          "runtime": "none",
-          "command": "none"
-        },
-        "macos": {
-          "runtime": "none",
-          "command": "none"
-        },
-        "other": {
-          "runtime": "none",
-          "command": "none"
-        }
-      }
-    },
-    "dependencies": {
-      "description": "Lista de bibliotecas ou pacotes necessários para o funcionamento do comando, se houver.",
-      "help": "Formato: 'NOME_BIBLIOTECA: URL_DO_DOWNLOAD'. Ex: { 'Ruby': 'https://rubyinstaller.org/download' }",
-      "value": {}
-    },
-    "status": {
-      "value": "active",
-      "description": "Indica se o projeto está ativo, em desenvolvimento, ou se foi descontinuado; none, active, outdated."
-    },
-    "platform": {
-      "value": "Any",
-      "description": "Sistemas operacionais compatíveis com o código, informando onde o comando pode ser executado; Ex: Any, Windows, MacOS, Linux, Termux, Solaris..."
-    },
-    "notes": {
-      "value": "Leia o modo de uso atenciosamente no comando '{prefix}mina --help'. Mais informações dentro do zip em EXTRAS.md.",
-      "description": "Detalhes adicionais que devem ser citados, como guias, vídeos ou outras informações relevantes."
     }
+  },
+  "configuration": {
+    "description": "Comandos a serem executados após a instalação, usados para configurar o ambiente ou software. Utilize &, |, && ou || para múltiplos comandos.",
+    "value": {
+      "help": "Ex: 'sed -i \"s/#PLACEHOLDER_USERNAME/$(whoami)/g\" settings.json' para substituir um placeholder no arquivo de configuração. 'runtime' é o programa que executará o 'command'.",
+      "windows": {
+        "runtime": "none",
+        "command": "none"
+      },
+      "linux": {
+        "runtime": "none",
+        "command": "none"
+      },
+      "macos": {
+        "runtime": "none",
+        "command": "none"
+      },
+      "other": {
+        "runtime": "none",
+        "command": "none"
+      }
+    }
+  },
+  "dependencies": {
+    "description": "Lista de bibliotecas ou pacotes necessários para o funcionamento do comando, se houver.",
+    "help": "Formato: 'NOME_BIBLIOTECA: URL_DO_DOWNLOAD'. Ex: { 'Ruby': 'https://rubyinstaller.org/download' }",
+    "value": {}
+  },
+  "status": {
+    "value": "active",
+    "description": "Indica se o projeto está ativo, em desenvolvimento, ou se foi descontinuado; none, active, outdated."
+  },
+  "platform": {
+    "value": "Any",
+    "description": "Sistemas operacionais compatíveis com o código, informando onde o comando pode ser executado; Ex: Any, Windows, MacOS, Linux, Termux, Solaris..."
+  },
+  "notes": {
+    "value": "Leia o modo de uso atenciosamente no comando '{prefix}mina --help'. Mais informações dentro do zip em EXTRAS.md. Se nao estiver usando linux e as imagens do jogo não aparecerem corretamente, tente instalar o pacote 'fonts-noto' e 'fonts-dejavu'.\n\n# Notas das versões\n\n## version: 0.1.0\n- Jogo disponibilizado com funções básicas.\n\n## version: 0.1.1\n- Adicionado a opção de jogar selecionando somente o numero da célula.\n- Adicionado o modo de escolher o tipo de jogo, texto, imagem ou figurinha.\n- Adicionado modo de sair de um jogo em andamento.\n- Alguns diálogos do jogo foram melhorados.\n- Menu de ajuda aperfeiçoado.\n- Modificado o modo de seleção de dificuldade, antes eram 5 valores fixos e agora sao valores progressivos.\n- Adicionado a configuração de instalação de fontes com emojis no instruct.json\n- Algumas outras refatorações, melhorias e correções de bugs.\n- Adicionado documentação.",
+    "description": "Detalhes adicionais que devem ser citados, como guias, vídeos ou outras informações relevantes."
   }
+}
