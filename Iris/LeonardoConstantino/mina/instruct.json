@@ -21,7 +21,7 @@
       },
       "linux": {
         "runtime": "apt",
-        "command": "apt install fonts-noto fonts-dejavu"
+        "command": "sudo apt install fonts-noto fonts-dejavu"
       },
       "macos": {
         "runtime": "none",
